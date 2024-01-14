@@ -1,0 +1,33 @@
+{
+  "name": "raketechchallenge",
+  "version": "1.0.0",
+  "description": "The Challenge of Raketech using JS and Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run --spec 'cypress/e2e/**/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rcardosopereira/raketechJS.git"
+  },
+  "keywords": [
+    "JS",
+    "Cypress",
+    "Test",
+    "Automation",
+    "QA",
+    "Engineer",
+    "Automation"
+  ],
+  "author": "Rafael C. Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcardosopereira/raketechJS/issues"
+  },
+  "homepage": "https://github.com/rcardosopereira/raketechJS#readme",
+  "devDependencies": {
+    "cypress": "^13.6.2"
+  }
+}
