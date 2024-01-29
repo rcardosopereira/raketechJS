@@ -11,10 +11,14 @@ describe('Visit Raketech Website', () => {
         cy.get('.title').contains('Products').click();
         cy.get('.team-member-image-inner').eq(0).click();
         cy.get('.team-desc > .bottom_meta > [href="https://www.casinoguide.se"] > .icon-default-style').click();
-        
+
         cy.window().then((win) => {
             cy.stub(win, 'confirm').returns(true);
-            cy.visit('https://www.casinoguide.se');
+            cy.visit('https://www.casinoguide.se', () => {
+            });
+
         });
+
     });
+    
 });

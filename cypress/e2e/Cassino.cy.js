@@ -3,6 +3,7 @@
 describe('Visit www.casinoguide.se', () => {
     beforeEach(() => {
         cy.visit('https://www.casinoguide.se/');
+        //HAVE A LOOK E2E.JS: returning false here prevents Cypress from failing the test when an uncaught exception occurs
     });
 
     it('should validate the presence of "Casino Online"', () => {

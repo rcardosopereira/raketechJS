@@ -72,18 +72,27 @@ The palliative solution:
 Inside the [folder]: ../cypress/support/ 
 access the *e2e.js* file and uncomment lines 19 and 25.
 
-Reference: https://docs.cypress.io/guides/references/error-messages#Uncaught-exceptions-from-your-application
+### Reference: 
+https://docs.cypress.io/guides/references/error-messages#Uncaught-exceptions-from-your-application
+https://docs.cypress.io/api/cypress-api/catalog-of-events#Uncaught-Exceptions
+           
 
 ### Project Structure
 1. API.cy.js: the solution to the API challenge was created;
 2. Cassino.cy.js: a solution was created to perform some validations in the casinoguide.se application;
 3. raketechMain.cy.js: the solution for the UI test challenge was created;
 4. raketechMain2.cy.js: the solution to the UI test challenge was created, implementing the cypress cy.window() function for the casinoguide.se application to display within the cypress panel as well.
+5. raketechMain2Full.cy.js: there´s a complete final version of Raketech site and Cassino site as well.
 
 ### Docker
 To run the test in the Docker, please run the command below:
 > ```bash
 > docker run -it raketech
+> ```
+
+To create or update your Docker image, run the command below:
+> ```bash
+> docker build -t <image_name> .
 > ```
 
 ### This will install Cypress locally as a dev dependency for your project.

@@ -33,4 +33,5 @@ describe('Visit Raketech Website', () => {
     cy.wait(3000);
     cy.get('.team-desc > .bottom_meta > [href="https://www.casinoguide.se"] > .icon-default-style').click();
   });
+  
 });
